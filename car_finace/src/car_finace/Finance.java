@@ -10,11 +10,10 @@ public class Finance {
 		System.out.println( "This prorgram will calculate the total Car and Interest payment for your car." );
 		
 		double cp = QueryAssign( "What is the total price of the car?");
-		double dp = QueryAssign( "How much is the down payment?");
-		double li = QueryAssign( "How much is the monthly interest rate?");
+		double li = QueryAssign( "What is the annual percentage of the loan?" );
 		double ll = QueryAssign( "How long, in months, is your loan?" );
 		
-		Car newCar = new Car( cp, dp, li, ll );
+		Car newCar = new Car( cp, li, ll );
 		newCar.PrintFinances();
 		
 	}
